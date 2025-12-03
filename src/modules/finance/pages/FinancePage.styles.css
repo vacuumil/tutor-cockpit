@@ -1,0 +1,134 @@
+/* FinancePage.styles.css */
+.stats-card {
+  transition: all 0.2s;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: white;
+}
+
+.stats-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.income-positive {
+  color: #059669;
+}
+
+.income-negative {
+  color: #dc2626;
+}
+
+.expense-category {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.category-materials {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.category-software {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.category-advertising {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.category-office {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.category-other {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.payment-method {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.transaction-item {
+  transition: background-color 0.2s;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.transaction-item:hover {
+  background-color: #f9fafb;
+}
+
+.month-selector {
+  border-color: #d1d5db;
+  transition: all 0.2s;
+  background-color: white;
+}
+
+.month-selector:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.tab-active {
+  border-bottom-color: #3b82f6;
+  color: #2563eb;
+}
+
+.tab-inactive {
+  color: #6b7280;
+  border-bottom-color: transparent;
+}
+
+.tab-inactive:hover {
+  color: #374151;
+  border-bottom-color: #d1d5db;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tab-nav {
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+  }
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s ease-out;
+}
