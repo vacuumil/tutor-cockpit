@@ -68,3 +68,7 @@ coverage/
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+/dist
+/dist-ssr
+.vercel

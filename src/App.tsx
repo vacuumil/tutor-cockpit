@@ -6,7 +6,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 function App() {
   return (
     <ErrorBoundary>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <AppRouter />
       </BrowserRouter>
     </ErrorBoundary>
